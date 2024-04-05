@@ -42,21 +42,27 @@ Parece ser que entre más tratamiento se les da a las ratas más tiempo sobreviv
 Hagamos pruebas por parejas para determinar si hay alguna diferencia en la supervivencia entre parejas de grupos.
 
 Usando los pesos log rango obtenemos los estadísticos donde probamos si son diferentes los reisgos entre los grupos(por pares). Para el grupo **sin tratamiento** y con solo **radiación** obtenemos 
+
 | Z    |
 |------|
 |3.3781| 
+
 lo que implica que debemos rechazar la hipótesis de que las funciones de riesgo entre estos dos grupos son iguales.
 
  Para el grupo **sin tratamiento** y con **radiación+BPA**
+ 
 | Z    |
 |------|
 |4.6551|
 por lo tanto debemos rechazar la hipótesis de que las funciones de riesgo entre estos dos grupos son iguales.
 
+
 Finalmente para los grupos con solo **radiación** y con **radiación+BPA**
+
 | Z    |
 |------|
 |3.1856|
+
 lo que implica que debemos rechazar la hipótesis de que las funciones de riesgo entre estos
 dos grupos son iguales.
 
@@ -65,8 +71,10 @@ Existe evidencia a priori de que, si hay una diferencia en la supervivencia, deb
 Hagamos una prueba de tendencia para verificar la hipótesis de orden.
 
 Para la prueba de la tendencia el estadístico de prueba resulta 
+
 | Z     |
 |-------|
 |-2.4978|
+
 lo que implica que se debe de rechazar la hipótesis nula a favor de la alternativa, es decir, hay una tendencia en las funciones de riesgo de los grupos.
 
