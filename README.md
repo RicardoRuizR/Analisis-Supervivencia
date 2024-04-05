@@ -79,3 +79,30 @@ Para la prueba de la tendencia el estadístico de prueba resulta
 
 lo que implica que se debe de rechazar la hipótesis nula a favor de la alternativa, es decir, hay una tendencia en las funciones de riesgo de los grupos.
 
+## Ajuste de un modelo lineal
+
+Ahora ajustaremos un modelo lineal usando los datos dados y creando variables categóricas para los tratamientos utilizados.
+
+Obtenemos las estimaciones de los coeficientes y sus errores estándar.
+
+|Coeficiente | Estimación | Eror estándar |
+|------------|------------|---------------|
+|rad         | -1.811971  | 0.5597120     |
+|radbpa      | -3.557371  | 0.7582538     |
+
+y el intervalo de confianza para el riesgo relativo se obtiene usando la covarianza entre los grupos deseados, obteniendo
+(0.0545299, 0.4892239)
+
+###Pruebas
+
+Tomando el ajuste ya hecho podemos obtener las pruebas de razon verosimilitud, Wald y Score, siendo estas
+
+| Prueba    | χ2    | GL| p-valor |
+|-----------|-------|---|---------|
+|Razon Ver. | 27.37 | 2 | 1e-06   |
+|Wald       | 22.45 | 2 | 1e-05   |
+|Score      | 31.74 | 2 | 1e-07   |
+
+Estas pruebas nos indican que ambos tratamientos influyen en la supervivencia.
+
+
