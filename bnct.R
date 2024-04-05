@@ -203,21 +203,3 @@ exp((fit_ratas$coef[1]+c(-1,1)*1.96*sqrt(fit_ratas$var[1,1])))
 
 #beta1 = beta2 = 0 realiza la prueba, P-valor de la prueba beta igual a cero.
 summary(fit_ratas)
-
-#beta1 = beta2
-c <- matrix(nrow=1,ncol=2,data=c(1,-1))
-linearHypothesis(fit_ratas,c,rhs = 0)
-
-#primero obtenemos el riesgo relativo
-dif <- fit_ratas$coef[2]-fit_ratas$coef[1]
-exp(dif)
-#luego obtenemos el error estándar de la diferencia de los coeficientes
-sedif <- fit_ratas$var[1,1]+fit_ratas$var[2,2]-2*fit_ratas$var[1,2]
-#entonces el intervalo de confianza queda 
-exp((dif+c(-1,1)*1.96*sqrt(sedif)))
-
-#I(rad+radbpa) hace un ajuste como una sola variable
-fit_ratase <- coxph(Surv(tiempo,delta)~I(rad + radbpa), data = datos, 
-                    method = "breslow")
-summary(fit_ratase)
-
