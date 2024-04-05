@@ -54,6 +54,7 @@ lo que implica que debemos rechazar la hipótesis de que las funciones de riesgo
 | Z    |
 |------|
 |4.6551|
+
 por lo tanto debemos rechazar la hipótesis de que las funciones de riesgo entre estos dos grupos son iguales.
 
 
