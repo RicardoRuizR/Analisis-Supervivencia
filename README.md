@@ -1,4 +1,4 @@
-# Survival Analysis
+# Análisis de Supervivencia
 
 El análisis de supervivencia es una técnica estadística que se utiliza para evaluar la duración de un evento en el tiempo. En el contexto empresarial, se emplea para comprender la probabilidad de que una empresa siga funcionando durante un período determinado.
 
